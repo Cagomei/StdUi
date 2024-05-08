@@ -23,13 +23,13 @@ function StdUi:Panel(parent, width, height, inherits)
 end
 
 function StdUi:PanelWithLabel(parent, width, height, inherits, text)
-	local frame = self:Panel(parent, width, height, inherits);
+    local frame = self:Panel(parent, width, height, inherits);
 
-	frame.label = self:Header(frame, text);
-	frame.label:SetAllPoints();
-	frame.label:SetJustifyH('CENTER');
+    frame.label = self:Header(frame, text);
+    frame.label:SetAllPoints();
+    frame.label:SetJustifyH('CENTER');
 
-	return frame;
+    return frame;
 end
 
 function StdUi:PanelWithTitle(parent, width, height, text)
